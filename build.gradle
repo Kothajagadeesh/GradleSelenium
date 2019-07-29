@@ -29,7 +29,7 @@ compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.14.
 
 test {
 	useTestNG(){
-		suites 'testng.xml' //Suit to execute 
+		suites 'testng.xml', 'testng1.xml' //Suit to execute
 		//https://docs.gradle.org/current/javadoc/org/gradle/api/tasks/testing/testng/TestNGOptions.html#useDefaultListeners--
 		useDefaultListeners = true // to use default testng listeners 
 		
@@ -39,3 +39,4 @@ test {
 	
 	reports.html.setDestination(file("$projectDir/gradleReports")) // gradle test reports 
 }
+
