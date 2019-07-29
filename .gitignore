@@ -1,0 +1,12 @@
+
+.classpath
+.gradle/
+.idea/
+.project
+.settings/
+bin/test/.gitignore
+gradleSelenium.iml
+test-output/*
+testngOutput/*
+gradleReports/*
+build/*
